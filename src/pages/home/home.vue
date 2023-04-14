@@ -5,10 +5,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <Main />
+  <div>
+    <h1>Наша гора!</h1>
+    <h5>Привет! тут пока пустовато, но не отчаивайтесь!</h5>
+    <a href="https://t.me/nashagora" target="_blank">Наш тг канал</a>
+    <br>
+    <img src="~/assets/images/bg.jpg" alt="main photo" />
+  </div>
 </template>
 
-<script setup>
-import Main from '~/components/Main'
-import '~/assets/styles/main.scss'
-</script>
+<script lang="ts" src="./home.ts" />
+<style lang="scss" src="./home.scss" />
