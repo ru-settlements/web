@@ -1,0 +1,6 @@
+npmScopes:
+  ru-settlements:
+    npmAlwaysAuth: false
+    npmPublishRegistry: "https://registry.yarnpkg.com"
+    npmRegistryServer: "https://npm.pkg.github.com"
+    npmAuthToken:
