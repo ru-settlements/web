@@ -14,5 +14,10 @@
   </div>
 </template>
 
-<script lang="ts" src="./home.ts" />
-<style lang="scss" src="./home.scss" />
+<script lang="ts" setup>
+
+</script>
+
+<style lang="scss">
+
+</style>

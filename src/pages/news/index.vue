@@ -10,5 +10,10 @@
   </div>
 </template>
 
-<script lang="ts" src="./news.ts" />
-<style src="./news.scss" lang="scss"/>
+<script lang="ts" setup>
+import { NewsFilters } from "~/features/news-filters";
+import { NewsRow } from "~/entities/news";
+import { NewsItemActions } from "~/features/news-item-actions";
+</script>
+
+<style lang="scss"></style>
