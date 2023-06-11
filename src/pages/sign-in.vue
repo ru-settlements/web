@@ -5,8 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import {UIInput} from "@ru-settlements/ui-components";
-
 definePageMeta({
   layout: 'guest'
 })

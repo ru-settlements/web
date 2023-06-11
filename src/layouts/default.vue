@@ -4,7 +4,6 @@
 </template>
 
 <script lang="ts" setup>
-import { NavigationMenu } from "@ru-settlements/ui-components";
 import { ref } from "@vue/reactivity";
 
 const items = ref([
