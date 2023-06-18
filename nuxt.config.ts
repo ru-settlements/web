@@ -5,6 +5,15 @@ export default defineNuxtConfig({
       '@ru-settlements/ui-components/dist/lib.css',
       '~/assets/styles/main.scss'
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/styles/colors.scss";'
+        }
+      }
+    }
+  },
   runtimeConfig: {
     public: {
       baseUrl: 'http://localhost:3000/'
