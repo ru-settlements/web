@@ -708,10 +708,10 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
-"@ru-settlements/ui-components@^0.3":
-  version "0.3.4"
-  resolved "https://npm.pkg.github.com/download/@ru-settlements/ui-components/0.3.4/9e6dcb1ffee604e268ab57ba6eaacdd994ba1ebd#9e6dcb1ffee604e268ab57ba6eaacdd994ba1ebd"
-  integrity sha512-vmKE+nbNA9j89GJLKfLtDx2MG6qjP5CoE8vfQ6PlhfInvhorucAvVinY3yBiVR8merz24PL6keAgrp3JbDm3fg==
+"@ru-settlements/ui-components@>=0.3":
+  version "0.3.7"
+  resolved "https://npm.pkg.github.com/download/@ru-settlements/ui-components/0.3.7/946852bb1ce528f0efb91d122f4a44862eebed2c#946852bb1ce528f0efb91d122f4a44862eebed2c"
+  integrity sha512-3NVazEoO+Je1RuDdSRiB52zLiPxJQYZxTnKxyB2hQx05b2IlYbcSk4mnjayhFpFr7+FHvhG5HauTgP47rW8+jA==
   dependencies:
     "@mdi/js" "^7.2.96"
     mdi-vue "^3.0.13"
