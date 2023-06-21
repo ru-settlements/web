@@ -1,10 +1,18 @@
 <template>
   <div class="sign-in">
-    <div class="sign-in__wrapper">
-      <img src="@/assets/images/sign-log-in.png" class="sign-in__img">
-      <div class="sign-in__bg-text">
-        <h1 class="sign-in__title sign-in__text">Наша гора</h1>
-        <p class="sign-in__enter sign-in__text">Вход</p>
+    <div class="sign-in__header sign-in__overlay">
+      <div class="sign-in__overlay">
+        <h1
+          class="sign-in__title
+          sign-in__text">
+          Наша гора
+        </h1>
+
+        <p
+          class="sign-in__enter
+          sign-in__text">
+          Вход
+        </p>
       </div>
     </div>
 
@@ -15,17 +23,36 @@
 
       <hr class="sign-in__line">
       
-      <form action="" class="sign-in__email">
-        <UIInput label="Логин / Эл. почта"/>
-      </form>
-      
-      <form action="" class="sign-in__password">
-        <UIInput label="Пароль"/>
-      </form>
+      <form action="">
+        <UIInput
+          label="Логин / Эл. почта"
+          class="sign-in__email"
+        />
 
-      <UIButton>
-        Зарегистрироваться
-      </UIButton>
+        <UIInput
+          label="Пароль"
+          class="sign-in__password"
+          type="password"
+        />
+
+        <a
+          href="#"
+          class="sign-in__hint
+          sign-in__hint_padding">
+          Забыли пароль?
+        </a>
+
+        <UIButton type="submit">
+          Зарегистрироваться
+        </UIButton>
+
+        <a
+          href="#"
+          class="sign-in__hint
+          sign-in__entry">
+          Вход
+        </a>
+      </form>
     </div>
   </div>
 </template>
@@ -40,32 +67,32 @@ import TelegramIcon from '@/assets/images/telegram.svg'
 
 <style lang="scss">
 .sign-in {
-  max-inline-size: 100%;
   inline-size: 600px;
-  max-block-size: 100%;
   block-size: 671px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  &__img {
-    border-radius: 10px;
-    filter: blur(1px) brightness(58%);
-  }
-
-  &__bg-text {
-    position: absolute;
-    z-index: 99;
-    text-align: center;
-    inset-block-start: 18.5%;
-    inset-inline-start: 37%;
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   &__text {
     color: $white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
   }
 
-  &__wrapper {
-    position: relative;
+  &__header {
+    background: url('@/assets/images/sign-log-in.png');
+    inline-size: 600px;
+    block-size: 107px;
+    border-radius: 10px;
+    background-size: cover;
+    filter: brightness(95%);
   }
 
   &__title {
@@ -80,14 +107,35 @@ import TelegramIcon from '@/assets/images/telegram.svg'
   &__line {
     inline-size: 129px;
     border: 1px solid $gray-400;
-    margin: 35px auto;
+    margin-block-start: 35px;
+    margin-block-end: 35px;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
   }
 
   &__content-wrapper {
     inline-size: 342px;
     max-inline-size: 100%;
-    margin: 0 auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     padding-block-start: 45px;
+  }
+
+
+  &__hint {
+    color: $light-blue-400;
+  }
+
+  &__hint_padding {
+    padding-block-end: 41px;
+  }
+
+  &__entry {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 10px;
   }
 }
 </style>
