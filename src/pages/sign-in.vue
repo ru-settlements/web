@@ -17,7 +17,7 @@
     </div>
 
     <div class="sign-in__content-wrapper">
-      <UIButton :icon="TelegramIcon">
+      <UIButton :icon="TelegramIcon" disabled>
         Войти с Telegram
       </UIButton>
 
@@ -32,26 +32,22 @@
         <UIInput
           label="Пароль"
           class="sign-in__password"
-          type="password"
-        />
+          type="password">
 
-        <a
-          href="#"
-          class="sign-in__hint
-          sign-in__hint_padding">
-          Забыли пароль?
-        </a>
+          <template #hint>
+            <a href="#">
+              Забыли пароль?
+            </a>
+          </template>
+        </UIInput>
 
-        <UIButton type="submit">
+        <UIButton
+          type="submit"
+          sub-link="#"
+          sub-link-label="Войти"
+          class="sign-in__submit-btn">
           Зарегистрироваться
         </UIButton>
-
-        <a
-          href="#"
-          class="sign-in__hint
-          sign-in__entry">
-          Вход
-        </a>
       </form>
     </div>
   </div>
@@ -68,8 +64,12 @@ import TelegramIcon from '@/assets/images/telegram.svg'
 <style lang="scss">
 .sign-in {
   inline-size: 600px;
-  block-size: 671px;
   border-radius: 10px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  padding-block-end: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   &__overlay {
@@ -106,7 +106,6 @@ import TelegramIcon from '@/assets/images/telegram.svg'
 
   &__line {
     inline-size: 129px;
-    border: 1px solid $gray-400;
     margin-block-start: 35px;
     margin-block-end: 35px;
     margin-inline-start: auto;
@@ -123,19 +122,8 @@ import TelegramIcon from '@/assets/images/telegram.svg'
     padding-block-start: 45px;
   }
 
-
-  &__hint {
-    color: $light-blue-400;
-  }
-
-  &__hint_padding {
-    padding-block-end: 41px;
-  }
-
-  &__entry {
-    display: flex;
-    justify-content: center;
-    padding-block-start: 10px;
+  &__submit-btn {
+    margin-block-start: 20px;
   }
 }
 </style>
