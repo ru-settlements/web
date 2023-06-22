@@ -8,7 +8,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@ru-settlements/ui-components": "0.2.9",
+    "@ru-settlements/ui-components": ">=0.3",
+    "@sidebase/nuxt-auth": "^0.6.0-beta.2",
+    "next-auth": "^4.22.1",
     "nuxt": "^3.4.1",
     "sass": "^1.58.0"
   }
