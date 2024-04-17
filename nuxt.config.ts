@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   srcDir: 'src/',
   dir: {
-    pages: 'src/pages/'
+    pages: 'pages'
   }
 })
