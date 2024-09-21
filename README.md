@@ -1,20 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Web for client of nasha-gora
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
+For access to npm github registry, you need to generate personal access token in profile page:
+go to:
+* Profile sidebar(right top angle profile icon)
+* Settings
+* Developer settings(at the bottom)
+* Personal access tokens(Tokens classic)
+* Generate token with next rules: write:packages and delete:packages
+
+Put that token to your bashrc/zshrc like that: `export NPM_TOKEN=<your token>`
+and run
 
 ```bash
-# yarn
-yarn install
-
 # npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ## Development Server
@@ -38,5 +41,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
