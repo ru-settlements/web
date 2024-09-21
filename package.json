@@ -8,8 +8,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@ru-settlements/ui-components": "0.2.9",
-    "nuxt": "^3.11.2",
-    "sass": "^1.75.0"
+    "@ru-settlements/ui-components": "0.3.7",
+    "nuxt": "^3.13.2",
+    "sass": "^1.79.3"
   }
 }
